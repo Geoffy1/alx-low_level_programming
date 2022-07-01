@@ -2,16 +2,17 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - prints all single digit numbers
-* Return: 0
+* main - prints all single digit numbers of base 10
+* follow by newline using putchar
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-int ch;
-for (ch = 48; ch < 57; ch++)
+int n;
+for (n = 48; n < 58; n++)
 {
-putchar(ch);
+putchar(n);
 }
-putchar(10);
+putchar('\n');
 return (0);
 }
