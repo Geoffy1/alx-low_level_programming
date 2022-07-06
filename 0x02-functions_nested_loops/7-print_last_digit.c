@@ -15,7 +15,7 @@ if (n < 0)
 a = n % 10;
 
 if (a < 0)
-	a = -a
+	a = -a;
 		_putchar(a + '0');
 
 
