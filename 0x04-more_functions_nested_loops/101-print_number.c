@@ -11,6 +11,7 @@ if (n < 0)
 _putchar('-');
 n = -n;
 }
+
 if (n == 0)
 {
 _putchar('0');
