@@ -22,7 +22,7 @@ sum3 = sum3 + a;
 }
 else if ((a % 5) == 0)
 {
-sum5 = sum5 + i;
+sum5 = sum5 + a;
 }
 }
 sum = sum3 + sum5;
