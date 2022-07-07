@@ -7,21 +7,25 @@
  */
 int main(void)
 {
-unsigned long int a, b, c, sum;
+unsigned long int sum3, sum5, sum;
+int a;
 
-for (a = 0; a < 1024; a++)
+sum3 = 0;
+sum5 = 0;
+sum = 0;
+
+for (a = 0; a < 1024; ++a)
 {
-b = a / 3;
-c = a / 5;
 if ((a % 3) == 0)
 {
-sum = sum + b;
+sum3 = sum3 + a;
 }
 else if ((a % 5) == 0)
 {
-sum = sum + c;
+sum5 = sum5 + i;
 }
 }
+sum = sum3 + sum5;
 printf("%lu\n", sum);
 return (0);
 }
