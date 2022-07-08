@@ -1,19 +1,25 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int _putchar(char);
 
 /**
  * print_number - prints an integer
  * @n: integer to be printed
  */
+
 void print_number(int n)
 {
-int n;
-int n1;
+
+unsigned int n1 = 0;
 
 if (n < 0)
 {
 n1 = -n
 _putchar('-');
 }
+
 else
 {
 n1 = n;
