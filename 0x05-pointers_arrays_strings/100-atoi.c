@@ -34,3 +34,4 @@ int _atoi(char *s)
 		h *= -1;
 	return (h);
 }
+}
