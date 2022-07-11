@@ -7,20 +7,23 @@
 void rev_string(char *s)
 {
 	char tmp;
-	int i, len;
+	int i, len1, len2;
 
-	len = 0;
-	while (s[len] != '\0')
+	len1 = 0;
+	len2 = 0;
+
+	while (s[len1] != '\0')
 	{
-		len++;
+		len1++;
 	}
 
-	len--;
+	len2 = len1 - 1;
 
-	for (i = 0; i < len / 2; i++)
+	for (i = 0; i < len1 / 2; i++)
 	{
 		tmp = s[i];
-		s[i] = s[len];
-		s[len--] = tmp;
+		s[i] = s[len2];
+		s[len2--] = tmp;
 	}
+
 }
