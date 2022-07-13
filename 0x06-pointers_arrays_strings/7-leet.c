@@ -1,26 +1,37 @@
 #include "main.h"
 
 /**
- * leet - encode a string into 1337
- * @s: string
- * Return: encoded string `s`
+ * *leet - check the code from main file 
+ *
+ * @str: string to transform
+ * Return: string.
  */
-
-char *leet(char *s)
+char *leet(char *str)
 {
-	int j;
-	int k;
-	char l[] = "ol_ea__t";
+	int i;
 
-	for (j = 0; s[j] != '\0'; j++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (k = 0; l[k] != '\0'; k++)
+		if (str[i] == 'a' || str[i] == 'A')
 		{
-			if (s[j] == l[k] || s[j] == (l[k] - 32))
-			{
-				s[j] = k + '0';
-			}
+			str[i] = '4';
+		}
+		else if (str[i] == 'e' || str[i] == 'E')
+		{
+			str[i] = '3';
+		}
+		else if (str[i] == 'o' || str[i] == 'O')
+		{
+			str[i] = '0';
+		}
+		else if (str[i] == 't' || str[i] == 'T')
+		{
+			str[i] = '7';
+		}
+		else if (str[i] == 'l' || str[i] == 'L')
+		{
+			str[i] = '1';
 		}
 	}
-	return (s);
+	return (str);
 }
