@@ -2,23 +2,23 @@
 
 /**
  * leet - encode a string into 1337
- * @s: pointer to string char parameters
+ * @s: string
  * Return: encoded string `s`
  */
 
 char *leet(char *s)
 {
-	int i;
 	int j;
+	int k;
 	char l[] = "ol_ea__t";
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		for (j = 0; l[j] != '\0'; j++)
+		for (k = 0; l[k] != '\0'; k++)
 		{
-			if (s[i] == l[j] || s[i] == (l[j] - 32))
+			if (s[j] == l[k] || s[j] == (l[k] - 32))
 			{
-				s[i] = j + '0';
+				s[j] = k + '0';
 			}
 		}
 	}
