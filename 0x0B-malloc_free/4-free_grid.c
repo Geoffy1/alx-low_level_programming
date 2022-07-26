@@ -1,33 +1,18 @@
 #include "main.h"
 
 /**
- * *create_array - creates an array char
- * and initializes it with a specific char
- * @size: size of the array to create
- * @c: char to initialize
- *
- * Return: pointer (Success), NULL (Error)
- */
-char *create_array(unsigned int size, char c)
+* free_grid - frees  array
+*  @grid:memory block to be freed
+* @height:height of the array
+* Return:returns void
+*/
+
+void free_grid(int **grid, int height)
 {
-	char *p;
-	unsigned int i = 0;
+	int i;
 
-	if (size == 0)
-		return (NULL);
+	for (i = 0; i < height; i++)
+	free(grid[i]);
 
-	p = (char *) malloc(sizeof(char) * size);
-
-	if (p == NULL)
-		return (0);
-
-	while (i < size)
-	{
-		*(p + i) = c;
-		i++;
-	}
-
-	*(p + i) = '\0';
-
-	return (p);
+	free(grid);
 }
