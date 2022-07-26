@@ -1,23 +1,33 @@
-#include  "main.h"
+#include "main.h"
 
 /**
- * free_grid - alloc_grid
- * @grid: pointer to 2D arrays
- * @height: array
- * Return: void
+ * *create_array - creates an array char
+ * and initializes it with a specific char
+ * @size: size of the array to create
+ * @c: char to initialize
+ *
+ * Return: pointer (Success), NULL (Error)
  */
-
-void free_grid(int **grid, int height)
+char *create_array(unsigned int size, char c)
 {
-	height--;
+	char *p;
+	unsigned int i = 0;
 
-	if (grid == NULL || height == 0)
-	return;
+	if (size == 0)
+		return (NULL);
 
-	while (height >= 0)
+	p = (char *) malloc(sizeof(char) * size);
+
+	if (p == NULL)
+		return (0);
+
+	while (i < size)
 	{
-		free(*(grid + height));
-		height--;
+		*(p + i) = c;
+		i++;
 	}
-	free(grid);
+
+	*(p + i) = '\0';
+
+	return (p);
 }
