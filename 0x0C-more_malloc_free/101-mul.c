@@ -3,7 +3,7 @@
 
 /**
  * main - multiplies two positive numbers
- * @argc: num 1 and num 2
+ * @argc: n args params
  * @argv: args
  * Return: 0 if (Success) always
  */
