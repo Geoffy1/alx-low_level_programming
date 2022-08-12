@@ -2,7 +2,6 @@
 
 /**
  * list_len - returns the number of elements in a linked list_t
- * @len: is number of nodes
  * @h: pointer
  *
  * Return: 0 for success
