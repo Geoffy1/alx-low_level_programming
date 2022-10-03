@@ -1,0 +1,1 @@
+my c libs shared
