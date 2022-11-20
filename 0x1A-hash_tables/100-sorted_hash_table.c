@@ -1,9 +1,8 @@
 #include "hash_tables.h"
 
 /**
- * print_ht - prints hash table state
- * @ht: pointer to hash table
- *
+ * print_ht - prints ht state
+ * @ht: pointer to ht
  * Return: void.
  */
 void print_ht(shash_table_t *ht)
@@ -14,10 +13,10 @@ void print_ht(shash_table_t *ht)
 
 
 /**
- * shash_table_create - creates a hash table
- * @size: the size of the hash table
+ * shash_table_create - creates a ht
+ * @size: the size of the ht
  *
- * Return: pointer to hash table type
+ * Return: pointer to ht type
  */
 shash_table_t *shash_table_create(unsigned long int size)
 {
@@ -108,8 +107,8 @@ void shash_table_sort(shash_table_t *ht, shash_node_t *snode)
 }
 
 /**
- * shash_table_set - adds an element to a shash table
- * @ht: pointer to shash table
+ * shash_table_set - adds an element to a sht
+ * @ht: pointer to sht
  * @key: the string key
  * @value: the string value
  *
@@ -149,8 +148,8 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 }
 
 /**
- * shash_table_get - gets an element from a hash table
- * @ht: pointer to hash table
+ * shash_table_get - gets an element from a ht
+ * @ht: pointer to ht
  * @key: the string key
  *
  * Return: string value or NULL
@@ -176,8 +175,8 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 
 
 /**
- * shash_table_print - prints the elements of a hash table
- * @ht: pointer to hash table
+ * shash_table_print - prints the elements of a ht
+ * @ht: pointer to ht
  *
  * Return: void.
  */
@@ -204,7 +203,7 @@ void shash_table_print(const shash_table_t *ht)
 
 /**
  * shash_table_print_rev - prints the elements of a hash table in reverse
- * @ht: pointer to hash table
+ * @ht: pointer to ht
  *
  * Return: void.
  */
@@ -230,8 +229,8 @@ void shash_table_print_rev(const shash_table_t *ht)
 }
 
 /**
- * shash_table_delete - deletes a hash table
- * @ht: pointer to hash table
+ * shash_table_delete - deletes a ht
+ * @ht: pointer to ht
  *
  * Return: void.
  */
