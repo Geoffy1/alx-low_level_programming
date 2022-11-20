@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * new_node - allocates a new node with checking
+ * new_node - allocates a new node
  * @key: the string key
  * @value: the string value
  *
@@ -34,8 +34,8 @@ hash_node_t *new_node(const char *key, const char *value)
 
 
 /**
- * hash_table_set - adds an element to a hash table
- * @ht: pointer to hash table
+ * hash_table_set - adds an element to a ht
+ * @ht: pointer to ht
  * @key: the string key
  * @value: the string value
  *
