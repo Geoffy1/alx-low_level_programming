@@ -1,10 +1,9 @@
 #include "hash_tables.h"
 
 /**
- * hash_djb2 - hashing function
+ * hash_djb2 - hashin funct
  * @str: the key
- *
- * Return: hashed index
+ * Return: hashd indx
  */
 unsigned long int hash_djb2(const unsigned char *str)
 {
