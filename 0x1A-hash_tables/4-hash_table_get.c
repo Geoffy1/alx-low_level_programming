@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - gets an element from a hash table
- * @ht: pointer to hash table
+ * hash_table_get - gets an element from a ht
+ * @ht: pointer to ht
  * @key: the string key
  *
  * Return: string value or NULL
