@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - prints the elements of a hash table
- * @ht: pointer to hash table
+ * hash_table_print - prints the elements of a ht
+ * @ht: pointer to ht
  *
  * Return: void.
  */
