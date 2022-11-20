@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_delete - deletes a hash table
- * @ht: pointer to hash table
+ * hash_table_delete - deletes a ht
+ * @ht: pointer to ht
  *
  * Return: void.
  */
